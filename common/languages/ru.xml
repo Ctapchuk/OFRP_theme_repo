@@ -1138,9 +1138,8 @@
 		<string name="gst_navbar_error">Некоторые настройки недоступны.</string>
 		<string name="gst_navbar_error_2">Отключите жесты, чтобы показать их.</string>
 
-		<string name="unmount_sys_install">Размонтировать /system до установки</string>
-		<string name="unmount_system">Размонтирование /system...</string>
-		<string name="unmount_system_err">Ошибка размонтирования /system</string>
+		<string name="unmount_super_install">Размонтировать Super перед прошивкой ZIP</string>
+		<string name="unmount_super">Размнтирование Super...</string>
 		
 		<string name="unmount_vendor_install">Размонтировать /vendor до установки</string>
 		<string name="unmount_vendor">Размонтирование /vendor...</string>

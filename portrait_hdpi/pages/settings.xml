@@ -162,14 +162,9 @@
 					<icon res="checkbox_false"/>
 					<action function="mountsystemtoggle">1</action>
 				</listitem>
-				<listitem name="{@unmount_sys_install}">
+				<listitem name="{@unmount_super_install}">
 					<condition var1="general_back" var2="mount"/>
-					<data variable="tw_unmount_system"/>
-				</listitem>
-				<listitem name="{@unmount_vendor_install}">
-					<condition var1="general_back" var2="mount"/>
-					<condition var1="fox_branch" op="&gt;=" var2="10"/>
-					<data variable="tw_unmount_vendor"/>
+					<data variable="tw_unmount_super"/>
 				</listitem>
 				<listitem name="{@use_rmrf_chk}">
 					<condition var1="general_back" var2="wipe"/>
@@ -252,12 +247,8 @@
 				<listitem name="{@files_show_hidden}">
 					<data variable="tw_hidden_files"/>
 				</listitem>
-				<listitem name="{@unmount_sys_install}">
-					<data variable="tw_unmount_system"/>
-				</listitem>
-				<listitem name="{@unmount_vendor_install}">
-					<condition var1="fox_branch" op="&gt;=" var2="10"/>
-					<data variable="tw_unmount_vendor"/>
+				<listitem name="{@unmount_super_install=Unmount Super before installing a ZIP}">
+					<data variable="tw_unmount_super"/>
 				</listitem>
 				<listitem name="{@inject_twrp_chk}">
 					<condition var1="tw_has_injecttwrp" var2="1"/>
