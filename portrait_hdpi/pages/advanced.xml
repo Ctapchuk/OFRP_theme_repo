@@ -263,9 +263,9 @@
 				<action function="set">fox_m_author=topjohnwu</action>
 				<action function="set">fox_m_name={@module_install} Magisk %magisk_ver%</action>
 				<action function="set">tw_file=Magisk.zip</action>
-				<action function="set">tw_filename=/sdcard/Fox/FoxFiles/Magisk.zip</action>
+				<action function="set">tw_filename=/FFiles/OF_Magisk/Magisk.zip</action>
 				<action function="set">tw_filecheck=%tw_filename%</action>
-				<action function="set">tw_zip_location=/sdcard/Fox/FoxFiles</action>
+				<action function="set">tw_zip_location=/FFiles/OF_Magisk</action>
 				<action function="queuezip"/>
 				<action function="set">tw_notexistpage=fox_modules_confirm</action>
 				<action function="set">tw_existpage=fox_modules_confirm</action>
@@ -278,10 +278,10 @@
 				<action function="queueclear"/>
 				<action function="set">fox_m_author=topjohnwu</action>
 				<action function="set">fox_m_name={@module_uninstall} Magisk</action>
-				<action function="set">tw_file=unrootmagisk.zip</action>
-				<action function="set">tw_filename=/sdcard/Fox/FoxFiles/unrootmagisk.zip</action>
+				<action function="set">tw_file=uninstall.zip</action>
+				<action function="set">tw_filename=/FFiles/OF_Magisk/uninstall.zip</action>
 				<action function="set">tw_filecheck=%tw_filename%</action>
-				<action function="set">tw_zip_location=/sdcard/Fox/FoxFiles</action>
+				<action function="set">tw_zip_location=/FFiles/OF_Magisk</action>
 				<action function="queuezip"/>
 				<action function="set">tw_notexistpage=fox_modules_confirm</action>
 				<action function="set">tw_existpage=fox_modules_confirm</action>
