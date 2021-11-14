@@ -289,6 +289,22 @@
 			</action>
 		</page>
 
+		<page name="mod_convert">
+			<action>
+				<action function="queueclear"/>
+				<action function="set">fox_m_author=Lebigmac & brigudav</action>
+				<action function="set">fox_m_name={@module_convert_rw}</action>
+				<action function="set">tw_file=OF_convert.zip</action>
+				<action function="set">tw_filename=/FFiles/OF_convert/OF_convert.zip</action>
+				<action function="set">tw_filecheck=%tw_filename%</action>
+				<action function="set">tw_zip_location=/FFiles/OF_convert</action>
+				<action function="queuezip"/>
+				<action function="set">tw_notexistpage=fox_modules_confirm</action>
+				<action function="set">tw_existpage=fox_modules_confirm</action>
+				<action function="page">filecheck</action>
+			</action>
+		</page>
+
 		<page name="mod_reset">
 			<action>
 				<action function="queueclear"/>
@@ -439,6 +455,11 @@
 					<condition var1="fox_branch" op="&gt;=" var2="10"/>
 					<icon res="bs_btn_archive"/>
 					<action function="page">mod_survival</action>
+				</listitem>
+				<listitem name="{@module_convert_rw}">
+					<condition var1="fileexists" var2="/FFiles/OF_convert/OF_convert.zip"/>
+					<icon res="bs_btn_archive"/>
+					<action function="page">mod_convert</action>
 				</listitem>
 
 			</listbox>

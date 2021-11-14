@@ -915,6 +915,7 @@
 		<string name="module_of_set">Р.к. настроек OrangeFox</string>
 		<string name="module_cam">Включить поддержку Camera2API</string>
 		<string name="module_pass">Удалить пароль</string>
+		<string name="module_convert_rw">Конвертировать систему в R/W</string>
 		<string name="fox_files_not_exist_1">Файл не найден!</string>
 		<string name="fox_files_not_exist_2">Перепрошейте OrangeFox с</string>
 		<string name="fox_files_not_exist_3">помощью установочного ZIP.</string>
