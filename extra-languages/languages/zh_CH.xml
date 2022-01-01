@@ -960,10 +960,9 @@
 		<string name="magisk_not_found_2">安装预装的Magisk吗？</string>
 		<string name="magisk_not_found_3"/>
 		
-		<!-- MIUI OTA -->
+		<!-- Incremental OTA -->
 		<string name="fox_ota_settings">OTA设置</string>
-		<string name="fox_miui_ota_on">启用OTA</string>
-		<string name="fox_ota_on">启用OTA</string>
+		<string name="fox_ota_on">启用增量 OTA </string>
 		<string name="fox_patch_rom">Patch ROM</string>
 		<string name="fox_ota_lite">OTA &amp; ROM</string>
 		
@@ -1026,9 +1025,9 @@
 		<string name="fox_ota_msg_custom">启用自定义ROM模式</string>
 		<string name="fox_ota_msg_reflash">请刷入完整的ROM！</string>
 		<string name="fox_advanced_stock_recovery">强制禁用官方 Recovery</string>
-		<string name="fox_support_miui_ota_chk">支持 OTA</string>
 		<string name="fox_include_system_survival_chk">OTA Survival（含系统）</string>
-		<string name="fox_verify_incremental_ota_signature_chk">增量OTA签名验证</string>
+		<string name="fox_include_super_survival_chk">OTA生存（包括超级）</string>
+		<string name="fox_verify_incremental_ota_signature_chk">OTA签名验证（仅限MIUI)</string>
 		<string name="fox_dmverity_chk">禁用 DM 检验</string>
 		<string name="fox_forced_encryption_chk">禁用强制加密</string>
 		<string name="FOX_DISABLE_OTA_AUTO_REBOOT_chk">安装OTA后阻止自动重启</string>

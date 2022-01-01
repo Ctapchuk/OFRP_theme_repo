@@ -2,7 +2,7 @@
 
 <language>
 	<display>Russian</display>
-	<!-- Translation by fordownloads, OrangeFox Recovery © 2019 -->
+	<!-- Translation by fordownloads OrangeFox Recovery © 2019 -->
 
 	<resources>
 		<!-- Font overrides - only change these if your language requires special characters -->
@@ -802,9 +802,9 @@
 		<string name="fox_incremental_ota_compatibility_chk">Проверка подписи инкрементального пакета...</string>
 		<string name="fox_incremental_ota_compatibility_false">Устанавливаемый пакет несовместим с этой версией прошивки!</string>
 		<string name="fox_incremental_ota_compatibility_true">Инкрементный пакет совместим</string>
-		<string name="fox_incremental_ota_status_enabled">Поддержка обновлений MIUI OTA: включена</string>
-		<string name="fox_incremental_ota_status_disabled">Поддержка обновлений MIUI OTA: отключена</string>
-		<string name="fox_incremental_package_detected">Обнаружен инкрементный пакет '{1}'</string>
+		<string name="fox_incremental_ota_status_enabled">Поддержка OTA обновлений: включена</string>
+		<string name="fox_incremental_ota_status_disabled">Поддержка OTA обновлений: отключена</string>
+		<string name="fox_incremental_package_detected">Обнаружен инкрементный пакет {1} '{2}'</string>
 		<string name="fox_survival_does_not_exist">OTA Survival не найден! Пожалуйста прошейте сначала полную версию прошивки!</string>
 		<string name="fox_install_detecting">Обнаружение текущего пакета...</string>
 		<string name="fox_install_standard_detected">- Обнаружен стандартный пакет</string>
@@ -961,11 +961,11 @@
 		<string name="magisk_not_found_2">"Дополнения OrangeFox" и</string>
 		<string name="magisk_not_found_3">установить Magisk?</string>
 
-		<!-- MIUI OTA -->
+		<!-- Incremental OTA -->
 		<string name="fox_ota_settings">Настройки OTA</string>
-		<string name="fox_miui_ota_on">Включить MIUI OTA</string>
-		<string name="fox_ota_on">Включить OTA</string>
+		<string name="fox_ota_on">Включить частичные OTA</string>
 		<string name="fox_patch_rom">Модификация ROM</string>
+		<string name="fox_ota_menu_header">Инкрементальное OTA</string>
 		<string name="fox_ota_lite">OTA и прошивка</string>
 
 		<!-- About -->
@@ -1028,11 +1028,11 @@
 		<!-- OTA -->
 		<string name="fox_ota_msg_ready">Вы готовы получать обновления!</string>
 		<string name="fox_ota_msg_custom">Режим кастомной прошивки</string>
-		<string name="fox_ota_msg_reflash">Прошейте полный MIUI ROM!</string>
+		<string name="fox_ota_msg_reflash">Прошейте полную систему!</string>
 		<string name="fox_advanced_stock_recovery">Отключить перезапись рекавери</string>
-		<string name="fox_support_miui_ota_chk">Поддержка частичных OTA MIUI</string>
 		<string name="fox_include_system_survival_chk">Включить System в OTA Survival</string>
-		<string name="fox_verify_incremental_ota_signature_chk">Проверка подписи MIUI OTA</string>
+		<string name="fox_include_super_survival_chk">Включить Super в OTA Survival</string>
+		<string name="fox_verify_incremental_ota_signature_chk">Проверка подписи OTA (только MIUI)</string>
 		<string name="fox_dmverity_chk">Отключить DM-Verity</string>
 		<string name="fox_forced_encryption_chk">Отключить принудительное шифрование</string>
 		<string name="FOX_DISABLE_OTA_AUTO_REBOOT_chk">Отключить автоперезагрузку после OTA</string>

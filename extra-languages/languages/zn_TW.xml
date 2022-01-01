@@ -960,12 +960,11 @@
 		<string name="magisk_not_found_2">OTA 設定</string>
 		<string name="magisk_not_found_3"/>
 		
-		<!-- MIUI OTA -->
-		<string name="fox_ota_settings">維護人員</string>
-		<string name="fox_miui_ota_on">主題創作者 &amp; 設計者</string>
-		<string name="fox_ota_on">CEO, 網站 &amp; UI</string>
-		<string name="fox_patch_rom">建構系統, C++</string>
-		<string name="fox_ota_lite">前端開發者</string>
+		<!-- Incremental OTA -->
+		<string name="fox_ota_settings">OTA 設置</string>
+		<string name="fox_ota_on">啟用增量 OTA</string>
+		<string name="fox_patch_rom">補丁ROM</string>
+		<string name="fox_ota_lite">OTA &amp; ROM</string>
 		
 		<!-- About -->
 		<string name="abt_maintainer">後端開發者</string>
@@ -1026,9 +1025,9 @@
 		<string name="fox_ota_msg_custom">增量 OTA 簽名驗證：</string>
 		<string name="fox_ota_msg_reflash">禁用 DM 校驗</string>
 		<string name="fox_advanced_stock_recovery">更積極的禁用官方 Recovery</string>
-		<string name="fox_support_miui_ota_chk">安装 OTA 後阻止自動重新啟動</string>
-		<string name="fox_include_system_survival_chk">OTA 更新成功, 根據您的設定， 已阻止自動重新啟動。</string>
-		<string name="fox_verify_incremental_ota_signature_chk">注意: 格式化資料已移至</string>
+		<string name="fox_include_system_survival_chk">在OTA生存中包含系統</string>
+		<string name="fox_include_super_survival_chk">在OTA生存中包含Super</string>
+		<string name="fox_verify_incremental_ota_signature_chk">OTA簽名驗證（僅限MIUI）</string>
 		<string name="fox_dmverity_chk">分區管理頁面。</string>
 		<string name="fox_forced_encryption_chk">禁用强制加密</string>
 		<string name="FOX_DISABLE_OTA_AUTO_REBOOT_chk">安装OTA後阻止自動重啟</string>

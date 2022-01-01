@@ -928,11 +928,11 @@
 		<string name="magisk_not_found_2">mitgeliefertes Magisk installieren?</string>
 		<string name="magisk_not_found_3"/>
 		
-		<!-- MIUI OTA -->
+		<!-- Incremental OTA -->
 		<string name="fox_ota_settings">OTA Einstellungen</string>
-		<string name="fox_miui_ota_on">Aktivieren Sie OTA</string>
-		<string name="fox_ota_on">Aktivieren Sie OTA</string>
+		<string name="fox_ota_on">Inkrementelles OTA aktivieren</string>
 		<string name="fox_patch_rom">Patch ROM</string>
+		<string name="fox_ota_menu_header">Inkrementelle OTA</string>
 		<string name="fox_ota_lite">OTA &amp; ROM</string>
 		
 		<!-- About -->
@@ -994,9 +994,9 @@
 		<string name="fox_ota_msg_custom">Custom ROM Modus aktivieren</string>
 		<string name="fox_ota_msg_reflash">Please flash full ROM!</string>
 		<string name="fox_advanced_stock_recovery">Aggressive Stock Recovery-Deaktivierung</string>
-		<string name="fox_support_miui_ota_chk">Support OTA</string>
 		<string name="fox_include_system_survival_chk">System in OTA-Überleben einschließen</string>
-		<string name="fox_verify_incremental_ota_signature_chk">Inkrementelle OTA-Signaturprüfung</string>
+		<string name="fox_include_super_survival_chk">Super in OTA-Überleben einschließen</string>
+		<string name="fox_verify_incremental_ota_signature_chk">OTA-Signaturüberprüfung (nur MIUI)</string>
 		<string name="fox_dmverity_chk">DM-Verity deaktivieren</string>
 		<string name="fox_forced_encryption_chk">Erzwungene Verschlüsselung deaktivieren</string>
 		<string name="FOX_DISABLE_OTA_AUTO_REBOOT_chk">Neustart nach OTA-Installation verhindern</string>

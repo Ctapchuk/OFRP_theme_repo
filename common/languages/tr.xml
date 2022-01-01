@@ -928,11 +928,11 @@
 		<string name="magisk_not_found_2">ve önceden hazırlanmış Magisk'i kurmak ister misin?</string>
 		<string name="magisk_not_found_3"/>
 		
-		<!-- MIUI OTA -->
+		<!-- Incremental OTA -->
 		<string name="fox_ota_settings">OTA Ayarları</string>
-		<string name="fox_miui_ota_on">OTA'yı Etkinleştir</string>
-		<string name="fox_ota_on">OTA'yı Etkinleştir</string>
+		<string name="fox_ota_on">Artımlı OTA'yı Etkinleştir</string>
 		<string name="fox_patch_rom">ROM'u Yamala</string>
+		<string name="fox_ota_menu_header">Artımlı OTA</string>
 		<string name="fox_ota_lite">OTA &amp; ROM</string>
 		
 		<!-- About -->
@@ -994,9 +994,9 @@
 		<string name="fox_ota_msg_custom">Özel ROM modu etkin</string>
 		<string name="fox_ota_msg_reflash">Lütfen eksiksiz bir ROM yükleyin!</string>
 		<string name="fox_advanced_stock_recovery">Agresif stok kurtarma devre dışı</string>
-		<string name="fox_support_miui_ota_chk">OTA Desteği</string>
 		<string name="fox_include_system_survival_chk">OTA sağkalımına sistemi dahil et</string>
-		<string name="fox_verify_incremental_ota_signature_chk">Artımlı OTA imza doğrulaması</string>
+		<string name="fox_include_system_survival_chk">OTA sağkalımına Super dahil et</string>
+		<string name="fox_verify_incremental_ota_signature_chk">OTA imza doğrulaması (yalnızca MIUI)</string>
 		<string name="fox_dmverity_chk">Dm-Verity'i Devre dışı bırak</string>
 		<string name="fox_forced_encryption_chk">Zorunlu Şifrelemeyi Devre Dışı Bırak</string>
 		<string name="FOX_DISABLE_OTA_AUTO_REBOOT_chk">OTA sonrası yeniden başlatmayı engelle</string>
