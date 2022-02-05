@@ -154,7 +154,7 @@
 					<condition var1="tw_mount_system_ro" op="!=" var2="0"/>
 					<icon res="checkbox_true"/>
 					<action function="set">tw_lifetime_writes=2</action>
-					<action function="page">system_readonly_check</action>
+					<action function="page">system_readonly_check_ext_context</action>
 				</listitem>
 				<listitem name="{@mount_sys_ro_chk}">
 					<condition var1="general_back" var2="mount"/>
