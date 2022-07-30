@@ -113,6 +113,8 @@
 		<string name="format_data_complete">Data Format completed</string>
 		<!-- Translator note: the word "yes" must remain English! -->
 		<string name="yes_continue">Type "yes" to confirm.</string>
+		<string name="format_data_for_f2fs_compression">Support for F2FS compression</string>
+		<string name="needs_compression_msg">F2FS: detected flag for formatting /data with support for F2FS compression!</string>
 		<string name="part_opt_hdr">Partition Info</string>
 		<string name="file_sys_opt">Partition Options</string>
 		<string name="part_mount_point">Mount Point</string>

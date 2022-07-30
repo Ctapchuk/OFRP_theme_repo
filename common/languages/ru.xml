@@ -114,6 +114,8 @@
 		<string name="format_data_complete">Форматирование данных завершено</string>
 		<!-- Translator note: the word "yes" must remain English! -->
 		<string name="yes_continue">Введите "yes" для продолжения...</string>
+		<string name="format_data_for_f2fs_compression">Поддержка F2FS компрессии</string>
+		<string name="needs_compression_msg">F2FS: обнаружен флаг форматирования /data для поддержки F2FS компрессии!</string>
 		<string name="part_opt_hdr">Информация о разделе</string>
 		<string name="file_sys_opt">Дополнительно</string>
 		<string name="part_mount_point">Точка монтирования</string>
