@@ -122,9 +122,52 @@
 					<condition var1="tw_uses_initramfs" var2="1"/>
 					<action function="set">tw_back=advanced</action>
 					<action function="set">tw_action=fixabrecoverybootloop</action>
-					<action function="set">tw_text1={@fix_recovery_loop_confirm}</action>
+					<action function="set">tw_text1={@fix_recovery_loop}</action>
 					<action function="set">tw_action_text1={@fixing_recovery_loop}</action>
 					<action function="set">tw_complete_text1={@fix_recovery_loop_complete}</action>
+					<action function="set">tw_slider_text={@swipe_to_confirm}</action>
+					<action function="page">confirm_action</action>
+				</listitem>
+				<listitem name="{@reflash_twrp}">
+					<icon res="bs_adv_se"/>
+					<condition var1="fox_branch" op="&gt;=" var2="11"/>
+					<!--condition var1="fox_vab_device" var2="1"/-->
+					<condition var1="utils_show" var2="1"/>
+					<condition var1="tw_has_boot_slots" var2="1"/>
+					<condition var1="tw_has_repack_tools" var2="1"/>
+					<action function="set">tw_repack_kernel=0</action>
+					<action function="set">tw_back=advanced</action>
+					<action function="set">tw_action=reflashtwrp</action>
+					<action function="set">tw_text1={@reflash_twrp}</action>
+					<action function="set">tw_action_text1={@reflashing_twrp}</action>
+					<action function="set">tw_complete_text1={@reflash_twrp_complete}</action>
+					<action function="set">tw_slider_text={@swipe_to_confirm}</action>
+					<action function="page">confirm_action</action>
+				</listitem>
+				<listitem name="{@merges_snapshots}">
+					<icon res="bs_adv_se"/>
+					<condition var1="fox_branch" op="&gt;=" var2="11"/>
+					<condition var1="fox_vab_device" var2="1"/>
+					<condition var1="utils_show" var2="1"/>
+					<action function="set">tw_back=advanced</action>
+					<action function="set">tw_action=mergesnapshots</action>
+					<action function="set">tw_text1={@merges_snapshots}</action>
+					<action function="set">tw_action_text1={@merging_snapshots}</action>
+					<action function="set">tw_complete_text1={@merging_snapshots_complete}</action>
+					<action function="set">tw_slider_text={@swipe_to_confirm}</action>
+					<action function="page">confirm_action</action>
+				</listitem>
+				<listitem name="{@unmap_super_devices}">
+					<icon res="bs_adv_se"/>
+					<condition var1="fox_branch" op="&gt;=" var2="11"/>
+					<!--condition var1="fox_vab_device" var2="1"/ -->
+					<condition var1="fox_dynamic_device" var2="1"/>
+					<condition var1="utils_show" var2="1"/>
+					<action function="set">tw_back=advanced</action>
+					<action function="set">tw_action=unmapsuperdevices</action>
+					<action function="set">tw_text1={@unmap_super_devices}</action>
+					<action function="set">tw_action_text1={@unmapping_super_devices}</action>
+					<action function="set">tw_complete_text1={@unmap_super_devices_complete}</action>
 					<action function="set">tw_slider_text={@swipe_to_confirm}</action>
 					<action function="page">confirm_action</action>
 				</listitem>
@@ -354,48 +397,11 @@
 
 			<text style="caption">
 				<placement x="%col1_x_caption%" y="%row3_1a_y%"/>
-				<text>Substratum</text>
-			</text>
-
-			<listbox style="btn_list">
-				<placement x="0" y="%row3_2a_y%" w="%screen_w%" h="%bl_h2%"/>
-				<listitem name="{@subs_wipe} (RRO, Legacy)">
-					<icon res="bs_btn_archive"/>
-					<action function="queueclear"/>
-					<action function="set">fox_m_author=prjkt.</action>
-					<action function="set">fox_m_name={@subs_wipe} (RRO, Legacy)</action>
-					<action function="set">tw_file=SubstratumRescue_Legacy.zip</action>
-					<action function="set">tw_filename=/sdcard/Fox/FoxFiles/SubstratumRescue_Legacy.zip</action>
-					<action function="set">tw_filecheck=%tw_filename%</action>
-					<action function="set">tw_zip_location=/sdcard/Fox/FoxFiles</action>
-					<action function="queuezip"/>
-					<action function="set">tw_notexistpage=fox_modules_confirm</action>
-					<action function="set">tw_existpage=fox_modules_confirm</action>
-					<action function="page">filecheck</action>
-				</listitem>
-				<listitem name="{@subs_wipe} (OMS)">
-					<icon res="bs_btn_archive"/>
-					<action function="queueclear"/>
-					<action function="set">fox_m_author=prjkt.</action>
-					<action function="set">fox_m_name={@subs_wipe} (OMS)</action>
-					<action function="set">tw_file=SubstratumRescue.zip</action>
-					<action function="set">tw_filename=/sdcard/Fox/FoxFiles/SubstratumRescue.zip</action>
-					<action function="set">tw_filecheck=%tw_filename%</action>
-					<action function="set">tw_zip_location=/sdcard/Fox/FoxFiles</action>
-					<action function="queuezip"/>
-					<action function="set">tw_notexistpage=fox_modules_confirm</action>
-					<action function="set">tw_existpage=fox_modules_confirm</action>
-					<action function="page">filecheck</action>
-				</listitem>
-			</listbox>
-
-			<text style="caption">
-				<placement x="%col1_x_caption%" y="%row5_2_y%"/>
 				<text>{@cust_oth}</text>
 			</text>
 
 			<listbox style="btn_list">
-				<placement x="0" y="%row5_3_y%" w="%screen_w%" h="%bl_h5%"/>
+				<placement x="0" y="%row3_2a_y%" w="%screen_w%" h="%bl_h6%"/>
 				<listitem name="{@module_of_set}">
 					<condition var1="fileexists" var2="/FFiles/OF_backup_settings/OF_backup_settings.zip"/>
 					<icon res="bs_btn_archive"/>
@@ -406,21 +412,6 @@
 					<action function="set">tw_filename=/FFiles/OF_backup_settings/OF_backup_settings.zip</action>
 					<action function="set">tw_filecheck=%tw_filename%</action>
 					<action function="set">tw_zip_location=/FFiles/OF_backup_settings</action>
-					<action function="queuezip"/>
-					<action function="set">tw_notexistpage=fox_modules_confirm</action>
-					<action function="set">tw_existpage=fox_modules_confirm</action>
-					<action function="page">filecheck</action>
-				</listitem>
-				<listitem name="{@module_initd}">
-					<condition var1="fileexists" var2="/sdcard/Fox/FoxFiles/OF_initd.zip"/>
-					<icon res="bs_btn_archive"/>
-					<action function="queueclear"/>
-					<action function="set">fox_m_author=DarthJabba9</action>
-					<action function="set">fox_m_name={@module_initd}</action>
-					<action function="set">tw_file=OF_initd.zip</action>
-					<action function="set">tw_filename=/sdcard/Fox/FoxFiles/OF_initd.zip</action>
-					<action function="set">tw_filecheck=%tw_filename%</action>
-					<action function="set">tw_zip_location=/sdcard/Fox/FoxFiles</action>
 					<action function="queuezip"/>
 					<action function="set">tw_notexistpage=fox_modules_confirm</action>
 					<action function="set">tw_existpage=fox_modules_confirm</action>
@@ -450,6 +441,38 @@
 					<action function="page">mod_convert</action>
 				</listitem>
 
+				<listitem name="{@remove_of_files}">
+					<condition var1="fileexists" var2="/FFiles/OF_DelFiles/OF_DelFiles.zip"/>
+					<icon res="bs_btn_archive"/>
+					<action function="queueclear"/>
+					<action function="set">fox_m_author=DarthJabba9</action>
+					<action function="set">fox_m_name={@remove_of_files}</action>
+					<action function="set">tw_file=OF_DelFiles.zip</action>
+					<action function="set">tw_filename=/FFiles/OF_DelFiles/OF_DelFiles.zip</action>
+					<action function="set">tw_filecheck=%tw_filename%</action>
+					<action function="set">tw_zip_location=/FFiles/OF_DelFiles</action>
+					<action function="queuezip"/>
+					<action function="set">tw_notexistpage=fox_modules_confirm</action>
+					<action function="set">tw_existpage=fox_modules_confirm</action>
+					<action function="page">filecheck</action>
+				</listitem>
+				<listitem name="{@module_initd}">
+					<condition var1="fox_vab_device" op="!=" var2="1"/>
+					<condition var1="fileexists" var2="/sdcard/Fox/FoxFiles/OF_initd.zip"/>
+					<icon res="bs_btn_archive"/>
+					<action function="queueclear"/>
+					<action function="set">fox_m_author=DarthJabba9</action>
+					<action function="set">fox_m_name={@module_initd}</action>
+					<action function="set">tw_file=OF_initd.zip</action>
+					<action function="set">tw_filename=/sdcard/Fox/FoxFiles/OF_initd.zip</action>
+					<action function="set">tw_filecheck=%tw_filename%</action>
+					<action function="set">tw_zip_location=/sdcard/Fox/FoxFiles</action>
+					<action function="queuezip"/>
+					<action function="set">tw_notexistpage=fox_modules_confirm</action>
+					<action function="set">tw_existpage=fox_modules_confirm</action>
+					<action function="page">filecheck</action>
+				</listitem>
+
 			</listbox>
 
 			<template name="base"/>
@@ -458,22 +481,6 @@
 				<placement x="%col1_x_indent%" y="%ab_bc_y%"/>
 				<text>{@fox_modules_hdr}</text>
 			</text>
-
-			<button style="actionbar">
-				<placement x="%ab_btn1_x%" y="%ab_y%" placement="4"/>
-				<action function="queueclear"/>
-				<action function="set">fox_m_author=DarthJabba9</action>
-				<action function="set">fox_m_name={@remove_of_files}</action>
-				<action function="set">tw_file=OF_DelFiles.zip</action>
-				<action function="set">tw_filename=/FFiles/OF_DelFiles/OF_DelFiles.zip</action>
-				<action function="set">tw_filecheck=%tw_filename%</action>
-				<action function="set">install_back=fox_modules</action>
-				<action function="set">tw_zip_location=/FFiles/OF_DelFiles</action>
-				<action function="queuezip"/>
-				<action function="set">tw_notexistpage=fox_modules_confirm</action>
-				<action function="set">tw_existpage=fox_modules_confirm</action>
-				<action function="page">filecheck</action>
-			</button>
 
 			<image>
 				<placement x="%ab_btn1_x%" y="%ab_y%" placement="4"/>
