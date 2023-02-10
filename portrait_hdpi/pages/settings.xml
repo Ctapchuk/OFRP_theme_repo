@@ -187,10 +187,10 @@
 					<condition var1="general_back" var2="formatdata"/>
 					<data variable="tw_rm_rf"/>
 				</listitem>
-				<listitem name="{@format_data_for_f2fs_compression}">
+				<!--listitem name="{@format_data_for_f2fs_compression}">
 					<condition var1="general_back" var2="formatdata"/>
 					<data variable="fox_need_data_f2fs_compression"/>
-				</listitem>
+				</listitem-->
 			</listbox>
 
 			<template name="gestures"/>
