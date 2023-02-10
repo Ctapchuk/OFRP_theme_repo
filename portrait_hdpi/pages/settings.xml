@@ -14,12 +14,14 @@
 				<!-- listitem name="OTA" -->
 				<listitem name="{@fox_ota_lite}">
 					<condition var1="of_no_extra_features" op="!=" var2="1"/>
+					<condition var1="of_no_ota_menu" op="!=" var2="1"/>
 					<icon res="bs_btn_set_ota"/>
 					<action function="page">fox_ota</action>
 				</listitem>
 				<listitem name="{@fox_ota_lite}">
 					<condition var1="of_no_extra_features" var2="1"/>
 					<condition var1="of_ab_device" op="!=" var2="1"/>
+					<condition var1="of_no_ota_menu" op="!=" var2="1"/>
 					<icon res="bs_btn_set_ota"/>
 					<action function="page">fox_ota_lite</action>
 				</listitem>
@@ -270,6 +272,7 @@
 					<condition var1="fox_vab_device" var2="1"/>
 					<condition var1="tw_has_boot_slots" var2="1"/>
 					<condition var1="tw_has_repack_tools" var2="1"/>
+					<condition var1="fox_disable_reflash_current" op="!=" var2="1"/>
 					<data variable="tw_auto_reflashtwrp"/>
 				</listitem>
 				<listitem name="{@inject_twrp_chk}">
